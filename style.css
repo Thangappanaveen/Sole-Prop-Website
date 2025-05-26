@@ -5,11 +5,12 @@ body {
 
 /* Hero Slideshow */
 .carousel {
+    width: 100%; /* Ensures carousel container spans full width */
 }
 
 .carousel img {
     width: 100%;
-    object-fit: cover;
+    object-fit: cover; /* Image covers area, crops if necessary. Height is auto by default. */
 }
 
 .carousel-caption {
@@ -29,4 +30,21 @@ section {
 /* Footer */
 footer {
     margin-top: 40px;
+}
+
+/* Desktop specific styles for the carousel */
+@media (min-width: 992px) {
+    .carousel {
+        max-height: 550px; /* Set a max-height for the carousel on desktop */
+        overflow: hidden;   /* Hide any overflow if images are too tall before object-fit */
+    }
+
+    .carousel .carousel-item {
+        height: 550px;     /* Force carousel items to this height */
+    }
+
+    .carousel .carousel-item img {
+        height: 100%;      /* Make image fill the fixed height of .carousel-item */
+                           /* width: 100% and object-fit: cover are inherited */
+    }
 }
