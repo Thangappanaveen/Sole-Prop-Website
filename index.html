@@ -13,6 +13,30 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Tango Consulting</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#heroCarousel">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
     <!-- Hero Section (Slideshow) -->
     <header id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
@@ -41,13 +65,13 @@
     </header>
 
     <!-- About Section -->
-    <section class="container mt-5 text-center">
+    <section id="about" class="container mt-5 text-center">
         <h2>About Us</h2>
         <p>We provide cutting-edge IT solutions for supply chain businesses, enabling smarter logistics and optimized operations.</p>
     </section>
 
     <!-- Services Section -->
-    <section class="container mt-5">
+    <section id="services" class="container mt-5">
         <h2 class="text-center">Our Services</h2>
         <div class="row">
             <div class="col-md-4">
@@ -87,13 +111,14 @@
             </div>
             <div class="text-center">
                 <button type="submit" class="btn btn-primary">Send Message</button>
+                <p class="form-text text-muted mt-2">Note: This form is for demonstration purposes only and is not currently functional.</p>
             </div>
         </form>
     </section>
 
     <!-- Footer -->
     <footer class="text-center py-3 bg-dark text-white">
-        <p>© 2025 Tango Consulting Solutions. All Rights Reserved.</p>
+        <p>© 2024 Tango Consulting Solutions. All Rights Reserved.</p>
     </footer>
 
 </body>
